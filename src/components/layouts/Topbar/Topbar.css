@@ -1,0 +1,77 @@
+.topbar-container {
+    height: 4.5vmax;
+    width: 100%;
+    -webkit-box-shadow: -4px 4px 21px -6px #000000; 
+    box-shadow: -4px 4px 21px -6px #000000;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 2vmax;
+    padding: 0vmax 2vmax;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.topbar-container {
+    margin: 0;
+}
+
+.button-container {
+    height: fit-content;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.separator-container {
+    border-left: 0.2vmax solid #BDBDBD;
+    height: 70%;
+}
+
+.button-container img {
+    width: 2vmax;
+}
+
+.list-menu {
+    -webkit-box-shadow: -4px 4px 21px -6px #000000; 
+    box-shadow: -4px 4px 21px -6px #000000;
+    position: absolute;
+    background: #FFFFFF;
+    list-style: none;
+    display: flex;
+    top: 3vmax;
+    padding: 0;
+}
+
+.list-menu li {
+    cursor: pointer;
+    padding: 1vmax 2vmax;
+}
+
+.list-menu li:hover {
+    background: #d8d8d8;
+}
+
+.register-back-button {
+    border: 2px solid #4C70FF;
+    background: transparent;
+    color: #4C70FF;
+    font-size: 1.2vmax;
+    font-weight: 600;
+    height: 3.5vmax;
+    border-radius: 5vmax;
+    padding: 1vmax 3.2vmax 1.2vmax 3.2vmax;
+    cursor: pointer;
+    margin: 0;
+}
+.register-main-button:hover {
+    background: #2c6ceb;
+}
+
+.button-container-modal {
+    margin-top: 2vmax;
+    display: flex;
+    justify-content: space-between;
+}

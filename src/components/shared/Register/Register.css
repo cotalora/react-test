@@ -1,0 +1,48 @@
+.register-main-container {
+    margin: 4vmax 5.5vmax auto 5.5vmax;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    display: flex;
+    border-radius: 2vmax;
+    box-shadow: -2px 2px 33px -15px #000000;
+    background: #FFFFFF;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.head-card h2 {
+    font-size: 1.5vmax;
+}
+
+.register-main-button {    
+    border: none;
+    background: #4C70FF;
+    color: #FFFFFF;
+    font-size: 1.2vmax;
+    font-weight: 600;
+    height: 3.5vmax;
+    border-radius: 5vmax;
+    padding: 1.1vmax 4.2vmax 1.2vmax 4.2vmax;
+    cursor: pointer;
+    margin: 0;
+}
+
+.register-back-button {
+    border: 2px solid #4C70FF;
+    background: transparent;
+    color: #4C70FF;
+    font-size: 1.2vmax;
+    font-weight: 600;
+    height: 3.5vmax;
+    border-radius: 5vmax;
+    padding: 1vmax 3.2vmax 1.2vmax 3.2vmax;
+    cursor: pointer;
+    margin: 0;
+}
+.register-main-button:hover {
+    background: #2c6ceb;
+}

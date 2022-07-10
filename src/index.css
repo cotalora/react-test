@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #E5EBF4;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.flex-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-1 {
+  width: 25%;
+  padding: 10px;
+}
+
+.col-2 {
+  width: 50%;
+  padding: 10px;
+}
+
+.col-3 {
+  width: 75%;
+  padding: 10px;
+}
+
+.col-4 {
+  width: 100%;
+  padding: 10px;
+}
+
+.card-container {
+  background: #FFFFFF;
+  border-radius: 2vmax;
+  margin-bottom: 1.5vmax;
+}
+
+.head-card {
+    border-bottom: 1px solid #BDBDBD;
+    padding: 0px 20px;
+    background: #4C70FF;
+    color: #FFFFFF;
+}
+
+.head-card-m {
+  border-bottom: 1px solid #BDBDBD;
+  padding: 15px 20px;
+  background: #4C70FF;
+  color: #FFFFFF;
+  border-top-left-radius: 2vmax;
+  border-top-right-radius: 2vmax;
+}
+
+.head-card-m h2 {
+  margin: 0;
+}
+
+.body-card {
+  padding: 10px;
+}
+
+.footer-card {
+  padding: 20px 20px 20px 20px;
+  border-top: 1px solid #BDBDBD;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.MuiFormControl-root {
+  width: 100%;
+}
+
+.msg-alert {
+  display: flex;
+  background: #ff8d8d;
+  border: 2px solid #6d0000;
+  padding: 0vmax 1.5vmax;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.msg-alert p {
+  font-weight: 600;
+  color: #6d0000;
+}
+
+.msg-alert button {
+  background: none;
+  border: none;
+  font-size: 1.5vmax;
+  color: #6d0000;
+  cursor: pointer;
+  height: fit-content;
+}

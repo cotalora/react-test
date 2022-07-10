@@ -1,0 +1,149 @@
+:root {
+    --border-color: #BDBDBD;
+    --border-color-focus: #7a7a7a;
+}
+
+.login-main-container {
+    margin: 4vmax 5.5vmax;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    display: flex;
+    border-radius: 2vmax;
+    box-shadow: -2px 2px 33px -15px #000000;
+}
+.login-img-container {
+    flex: 1 1 55%;
+    background: #4C70FF;
+}
+.login-img {
+    background-image: url(../../../assets/doctors.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    filter: blur(0.8vmax);
+    -webkit-filter: blur(0.8vmax);
+}
+.login-title-form-container {
+    flex: 1 1 45%;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2vmax;
+}
+.login-title-container {
+    margin: 1.5vmax 2vmax;
+    flex: 0 1;
+    border-bottom: 0.1vmax solid var(--border-color);
+    padding-bottom: 2vh;
+}
+.login-form-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1 1;
+    padding: 0vmax 5vmax;
+    margin: 0vmax 0vmax 2vmax 0vmax;
+    overflow-y: auto;
+    justify-content: center;
+}
+.login-form-container div {
+    width: 100%;
+}
+.login-form-container input[type=email], .login-form-container input[type=password] {
+    height: 5vh;
+    border: none;
+    border-bottom: 0.1vmax solid var(--border-color);
+    width: 100%;
+    font-size: 1vmax;
+}
+.login-form-container input[type=email]:focus-visible, .login-form-container input[type=password]:focus-visible {
+    outline: none;
+}
+.login-form-container input[type=email]:focus, .login-form-container input[type=password]:focus {
+    border-bottom: 0.1vmax solid var(--border-color-focus);
+}
+.login-form-container label {
+    width: 100%;
+    font-size: 1.2vmax;
+}
+.login-main-button {
+    border: none;
+    width: 100%;
+    background: #4C70FF;
+    color: #FFFFFF;
+    font-size: 1.2vmax;
+    font-weight: 600;
+    height: 3.5vmax;
+    border-radius: 5vmax;
+    margin: 5vh 0vh;
+    padding: 1.1vmax 0px 1.2vmax 0px;
+    cursor: pointer;
+}
+.login-main-button:hover {
+    background: #2c6ceb;
+}
+.login-title-form {
+    width: 100%;
+    margin: 3vh 0vh;
+}
+.login-title-container h2 {
+    margin: 0;
+    font-size: 2vmax;
+}
+.login-title-container h4 {
+    margin: 0;
+    font-weight: 400;
+    margin-top: 1vh;
+    font-size: 1.2vmax;
+}
+.email-form-name-container {
+    margin-top: 1vh;
+}
+.password-form-name-container {
+    margin-top: 2vh;
+}
+.msg-mt-10 {
+    margin-top: 1vmax;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 769px) { 
+    .login-img-container {
+        display: none;
+    }
+    .login-title-container h2 {
+        font-size: 3.5vmax;
+    }
+    .login-title-container h4 {
+        font-size: 2.2vmax;
+    }
+    .login-form-container label {
+        font-size: 2.2vmax;
+    }
+    .login-title-form {
+        font-size: 2.5vmax;
+    }
+    .login-main-button {
+        font-size: 2.2vmax;
+        padding: 2.1vmax 0px 4.2vmax 0px;
+    }
+    .login-main-container {
+        margin: 18vmax 5.5vmax;
+    }
+    .login-register-button {
+        font-size: 2.2vmax;
+        margin-bottom: 2vmax;
+    }
+}
+
+.login-register-button {
+    color: #4C70FF;
+    cursor: pointer;
+    font-weight: 600;
+}

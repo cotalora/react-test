@@ -1,0 +1,23 @@
+.home-container-usr {
+    margin: 2% 8%;
+}
+
+.register-back-button {
+    border: 2px solid #4C70FF;
+    background: transparent;
+    color: #4C70FF;
+    font-size: 1.2vmax;
+    font-weight: 600;
+    height: 3.5vmax;
+    border-radius: 5vmax;
+    padding: 1vmax 3.2vmax 1.2vmax 3.2vmax;
+    cursor: pointer;
+    margin: 0;
+}
+.register-main-button:hover {
+    background: #2c6ceb;
+}
+.table-container {
+    max-height: 500px;
+    overflow-y: auto;
+}
