@@ -71,6 +71,7 @@ function Register() {
                         required
                         id="firtsName"
                         name="firtsName"
+                        inputProps={{ "data-testid": "firts-name-input" }}
                         label="Primer nombre"
                         onChange={handleChange}
                     />
@@ -88,6 +89,7 @@ function Register() {
                         required
                         id="firtsLastName"
                         name="firtsLastName"
+                        inputProps={{ "data-testid": "firts-lastname-input" }}
                         label="Primer apellido"
                         onChange={handleChange}
                     />
@@ -105,6 +107,7 @@ function Register() {
                         required
                         id="documentNumber"
                         name="documentNumber"
+                        inputProps={{ "data-testid": "document-number-input" }}
                         label="Número de documento"
                         type="number"
                         onChange={handleChange}
@@ -115,6 +118,7 @@ function Register() {
                         required
                         id="email"
                         name="email"
+                        inputProps={{ "data-testid": "email-input" }}
                         type="email"
                         label="Correo electrónico"
                         onChange={handleChange}
@@ -126,6 +130,7 @@ function Register() {
                         error={isPasswordValid}
                         id="password"
                         name="password"
+                        inputProps={{ "data-testid": "password-input" }}
                         label="Contraseña"
                         type="password"
                         onChange={handleChange}
@@ -137,6 +142,7 @@ function Register() {
                         error={isPasswordValid}
                         id="passwordConfirm"
                         name="passwordConfirm"
+                        inputProps={{ "data-testid": "password-confirmation-input" }}
                         label="Confirmación de contraseña"
                         type="password"
                         onChange={handleChange}

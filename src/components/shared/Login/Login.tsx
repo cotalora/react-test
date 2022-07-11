@@ -67,11 +67,11 @@ function Login() {
                     <h3 className='login-title-form'>Inicia sesión con tu cuenta</h3>
                     <div className='email-form-name-container'>
                         <label htmlFor="loginEmail">Correo electrónico</label>
-                        <input id='loginEmail' type="email" name='email' onChange={handleChange} />
+                        <input id='loginEmail' aria-label="email-input" type="email" name='email' onChange={handleChange} />
                     </div>
                     <div className='password-form-name-container'>
                         <label htmlFor="loginPassword">Contraseña</label>
-                        <input id='loginPassword' type="password" name='password' onChange={handleChange} />
+                        <input id='loginPassword' type="password" aria-label="password-input" name='password' onChange={handleChange} />
                     </div>
                     {
                         showMsg &&

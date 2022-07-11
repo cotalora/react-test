@@ -5,10 +5,12 @@ import { AuthProvider } from './context/authContext';
 import Register from './components/shared/Register/Register';
 import Home from './components/shared/Home/Home';
 import Protected from './context/Protected';
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   
   return (
+    <BrowserRouter>
     <AuthProvider>
       <Routes>
         <Route path='/' element={ 
@@ -20,6 +22,7 @@ function App() {
         <Route path='/register' element={ <Register /> } />
       </Routes>
     </AuthProvider>
+    </BrowserRouter>
   );
 }
 
