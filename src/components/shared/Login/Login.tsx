@@ -31,9 +31,10 @@ function Login() {
     const handleSubmit = async (event: any) => {
         event.preventDefault();
         try {
-            await login(user.email, user.password);
-            setShowMsg(false);
-            navigate('/');
+            await login(user.email, user.password).then(() => {
+                setShowMsg(false);
+                navigate('/');
+            });
         } catch (err) {
             if (user.email == '' || user.password == '') {
                 setTextMsg("Debe digitar ambos campos")

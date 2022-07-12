@@ -54,6 +54,7 @@ function Register() {
 
     const hideMsg = () => {
         setShowMsg(false);
+        setIsPasswordValid(false);
     }
 
     const goToBack = () => {
@@ -149,10 +150,15 @@ function Register() {
                     />
                 </div>
                 {
-                    showMsg &&
+                    (showMsg || isPasswordValid) &&
                     <div className='col-4'>
                         <div className='msg-alert'>
-                            <p>Error al crear el usuario</p>
+                            {
+                                (showMsg &&
+                                    <p>Error al crear el usuario</p>) ||
+                                (isPasswordValid &&
+                                    <p>Contraseñas deben ser diferentes</p>)
+                            }
                             <button onClick={hideMsg}>X</button>
                         </div>
                     </div>
