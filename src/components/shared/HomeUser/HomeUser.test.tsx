@@ -15,19 +15,3 @@ test('Al presionar el botón entrar, con datos correctos, me tiene que renderiza
         expect(<HomeUser />).toBeTruthy();
     });
 });
-
-test('Al presionar el botón entrar, con datos correctos, me tiene que renderizar el componente de home del paciente', async () => {
-    const component = render(<App />);
-    const inputEmail = component.getByLabelText('email-input');
-    const inputPassword = component.getByLabelText('password-input');
-    fireEvent.change(inputEmail, {target: {value: 'paciente1C@gmail.com'}})
-    fireEvent.change(inputPassword, {target: {value: '123456789'}})
-    const buttonLogin = component.getByText('Entrar');
-    fireEvent.click(buttonLogin);
-    await waitFor(() => {
-        setTimeout(() => {
-            const msgAlert = screen.getByText('Paciente');
-            expect(msgAlert).toBeInTheDocument();
-        }, 3000);
-    });
-});
